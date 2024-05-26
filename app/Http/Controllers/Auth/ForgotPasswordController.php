@@ -5,14 +5,13 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Mail\ForgetPassword;
 use App\Models\User;
-use App\Models\Jobseeker;
 use Carbon\Carbon;
 use DB;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use Illuminate\Http\Request;
-use App\Services\OtpService;
 use Illuminate\Support\Str;
 use Mail;
+use Illuminate\Support\Facades\Hash;
     
 class ForgotPasswordController extends Controller
 {
@@ -87,6 +86,6 @@ class ForgotPasswordController extends Controller
  
           DB::table('password_resets')->where(['email'=> $request->email])->delete();
   
-          return redirect('/login')->with('message', 'Your password has been changed!');
+          return redirect()->route('login')->with('message', 'Your password has been changed!');
       }
 }

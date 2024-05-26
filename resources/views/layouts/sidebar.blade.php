@@ -15,36 +15,47 @@
             <a class="side-menu__item" data-bs-toggle="slide" href="{{asset('dashboard')}}"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
         </li>
 
-        <!-- Manage Applicant -->
+        <!-- Manage Users -->
         <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="#">
                 <i class="side-menu__icon fa fa-tasks"></i>
-                <span class="side-menu__label">Manage Employee</span><i class="angle fa fa-angle-right"></i></a>
+                <span class="side-menu__label">Manage User</span><i class="angle fa fa-angle-right"></i></a>
 
             <ul class="slide-menu">
                 <li class="sub-slide">
-                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="{{route('users.index')}}"><i class="fa fa-users" aria-hidden="true"></i> <span class="sub-side-menu__label" style="padding-left: 10px;"> User</span></a>
+                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="{{route('users.create')}}"><i class="fa fa-users" aria-hidden="true"></i> <span class="sub-side-menu__label" style="padding-left: 10px;"> Create</span></a>
+                </li>
+            </ul>
+            <ul class="slide-menu">
+                <li class="sub-slide">
+                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="{{route('users.index')}}"><i class="fa fa-users" aria-hidden="true"></i> <span class="sub-side-menu__label" style="padding-left: 10px;"> List</span></a>
+                </li>
+            </ul>
+
+            <ul class="slide-menu">
+                <li class="sub-slide">
+                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="{{route('users.excelUpload')}}"><i class="fa fa-users" aria-hidden="true"></i> <span class="sub-side-menu__label" style="padding-left: 10px;">User Upload</span></a>
                 </li>
             </ul>
 
         </li>
-        <!-- End Manage Applicant -->
+        <!-- End Manage Users -->
 
         <!-- Manage Applicant -->
         <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="#">
                 <i class="side-menu__icon fa fa-tasks"></i>
-                <span class="side-menu__label">Manage Candidates</span><i class="angle fa fa-angle-right"></i></a>
+                <span class="side-menu__label">Manage Vehicle</span><i class="angle fa fa-angle-right"></i></a>
 
             <ul class="slide-menu">
                 <li class="sub-slide">
-                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="#"><i class="fa fa-users" aria-hidden="true"></i> <span class="sub-side-menu__label" style="padding-left: 10px;">Candidates's</span></a>
+                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="{{ route('vehicle.create') }}"><i class="fa fa-users" aria-hidden="true"></i> <span class="sub-side-menu__label" style="padding-left: 10px;">Create</span></a>
                 </li>
                 <li class="sub-slide">
-                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="#"><i class="fa fa-users" aria-hidden="true"></i> <span class="sub-side-menu__label" style="padding-left: 10px;">Add Candidates</span></a>
+                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="{{ route('vehicle.index') }}"><i class="fa fa-users" aria-hidden="true"></i> <span class="sub-side-menu__label" style="padding-left: 10px;">List</span></a>
                 </li>
                 <li class="sub-slide">
-                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="#"><i class="fa fa-file" aria-hidden="true"></i> <span class="sub-side-menu__label" style="padding-left: 10px;">Candidates Upload</span></a>
+                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="#"><i class="fa fa-file" aria-hidden="true"></i> <span class="sub-side-menu__label" style="padding-left: 10px;">Vehicle Upload</span></a>
                 </li>
             </ul>
 

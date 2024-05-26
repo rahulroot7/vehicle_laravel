@@ -37,7 +37,6 @@
                                     <li>{{ $error }}</li>
                                     @endforeach
                                 </ul>
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
                             @elseif(session()->has('error_attempt'))
                             <div class="alert alert-info alert-dismissible">
@@ -45,7 +44,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
                             @endif
-                            <form method="POST" action="{{ route('login') }}" class="login100-form validate-form">
+                            <form method="POST" action="{{ route('auth.loginUser') }}" class="login100-form validate-form">
                                 @csrf
                                 <span class="login100-form-title"> Login </span>
                                 <div class="wrap-input100 validate-input" data-bs-validate="Valid Employee Code is required">

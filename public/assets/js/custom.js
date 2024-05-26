@@ -233,3 +233,10 @@
 	// $('body').addClass('scrollable-layout');
 	
 })(jQuery);
+
+
+// validate input in number
+function validateInput(input)
+{
+    input.value = input.value.replace(/\D/g, '');
+}

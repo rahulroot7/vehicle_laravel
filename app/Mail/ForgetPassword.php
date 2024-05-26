@@ -32,6 +32,6 @@ class ForgetPassword extends Mailable
     {
         return $this->from(env('MAIL_FROM_ADDRESS'), env('MAIL_APP_NAME'))
             ->subject('Forgot Password !')
-            ->view('email.forgetPassword')->with(['token' => $this->token]);
+            ->view('email.forgetPassword')->with(['token', $this->token]);
     }
 }

@@ -13,6 +13,65 @@
                 </ol>
             </div>
         </div>
+
+            <div class="home-dashboard">
+              <div class="card-category-1">
+                <div class="basic-card basic-card-aqua">
+                  <div class="card-content">
+                    <span class="card-title">
+                      Total User
+                    </span>
+                    <p class="card-text">
+                     18000
+                    </p>
+                  </div>
+                  <!-- <div class="card-link">
+                    <a href="#" title="Read Full">
+                      <span>
+                        Read Full
+                      </span>
+                    </a>
+                  </div> -->
+                </div>
+                <div class="basic-card basic-card-lips">
+                  <div class="card-content">
+                    <span class="card-title">
+                     Total Vehical
+                    </span>
+                    <p class="card-text">
+                      510000
+                    </p>
+                  </div>
+                 <!--  <div class="card-link">
+                    <a href="#" title="Read Full">
+                      <span>
+                        Read Full
+                      </span>
+                    </a>
+                  </div> -->
+                </div>
+                <div class="basic-card basic-card-light">
+                  <div class="card-content">
+                    <span class="card-title">
+                     Total Customer
+                    </span>
+                    <p class="card-text">
+                     8200000
+                    </p>
+                  </div>
+                  <!-- <div class="card-link">
+                    <a href="#" title="Read Full">
+                      <span>
+                        Read Full
+                      </span>
+                    </a>
+                  </div> -->
+                </div>
+               
+              </div>
+              <br/>
+            </div>
+
         <!-- PAGE-HEADER END -->
     </div>
 </div> 

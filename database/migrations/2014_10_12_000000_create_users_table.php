@@ -26,6 +26,7 @@ return new class extends Migration
             $table->enum('role', ['1', '2', '3'])->default('3')->comment('1=>super admin,2=>admin,3=>users');
             $table->enum('status', ['0', '1'])->default('0')->comment('0=>in-active,1=>active');
             $table->rememberToken();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

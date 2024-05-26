@@ -17,7 +17,7 @@
 			@yield('script')
 
 
-			<!-- JQUERY JS -->
+			<!-- JQUERY JS -->			
 			<script src="{{asset('assets/js/jquery.min.js')}}"></script>
 			<script src="{{asset('assets/js/jquery.validate.min.js')}}" defer></script>
 			<script src="{{asset('assets/js/custom-form-validation.js')}}"></script>
